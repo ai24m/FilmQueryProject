@@ -12,7 +12,11 @@ To build the application, the Database Accessor interface was constructed, which
 Having never worked with mySQL, implementing DBA and calling for the correct information with the proper JDBC code was very challenging. There were many failed attempts in calling the wrong information, or not populating a list of actors per film. However, with prepared statements, it allowed an accessible range to both the Actor and Film methods that were called to retrieve data from mySQL.
 
 # Resources
--Eclipse
--Atom
--SkillDistillery class resources
--MySQL with MAMP
+*Eclipse
+  
+*Atom
+  
+*SkillDistillery class resources
+  
+*MySQL with MAMP
+  
