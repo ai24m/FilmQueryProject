@@ -20,3 +20,6 @@ Having never worked with mySQL, implementing DBA and calling for the correct inf
   
 *MySQL with MAMP
   
+*Maven Dependencies
+  
+  
