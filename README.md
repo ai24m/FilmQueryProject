@@ -9,7 +9,7 @@ Every instance that the ID or keyword finds a match, then the user is given the 
 To build the application, the Database Accessor interface was constructed, which held methods that returned objects, such as Film, Actor, and List<Actor> that would later be extracted from a mySQL database. There were two classes Film and Actor that retrieved certain attributes from columns in various tables of a mySQL database. Afterwards, both were implemented into the DatabaseAccessor(DBA) interface. This allowed for the main application class FilmQueryApp to call for information via the DBA.
 
 # Challenges
-Having never worked with mySQL, implementing DBA and calling for the correct information with the proper JDBC code was very challenging. There were many failed attempts in calling the wrong information, or not populating a list of actors per film. However, with prepared statements, it allowed an accessible range to both the Actor and Film methods that were called to retrieve data from mySQL.
+Having never worked with mySQL, implementing DBA and calling for the correct information with the proper JDBC code was very challenging. There were many failed attempts in calling the wrong information, or not populating a list of actors per film. Tinkering with the DBA methods, specifically the driver that bridged DBMS to JDBC types. However, with prepared statements and the application pieced together, it allowed an accessible range to both the Actor and Film methods that were called to retrieve data from mySQL. 
 
 # Resources
 *Eclipse
