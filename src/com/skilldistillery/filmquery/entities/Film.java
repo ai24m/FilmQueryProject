@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Film {
 	private List<Actor> actors;
-	private int filmId;
+	private int filmID;
 	private String title;
 	private String description;
 	private int releaseYear;
@@ -21,11 +21,11 @@ public class Film {
 		super();
 	}
 
-	public Film(int filmId, String title, String description, int releaseYear, int languageId,
+	public Film(int filmID, String title, String description, int releaseYear, int languageId,
 			int rentalDuration, double rentalRate, int length, double replacementCost, String rating, String language,
 			String specialFeatures) {
 		super();
-		this.filmId = filmId;
+		this.filmID = filmID;
 		this.title = title;
 		this.description = description;
 		this.releaseYear = releaseYear;
@@ -40,12 +40,12 @@ public class Film {
 	}
 
 // constructor that includes list of actors of film object 
-	public Film(List<Actor> actors, int filmId, String title, String description, int releaseYear, int languageId,
+	public Film(List<Actor> actors, int filmID, String title, String description, int releaseYear, int languageId,
 			int rentalDuration, double rentalRate, int length, double replacementCost, String rating, String language,
 			String specialFeatures) {
 		super();
 		this.actors = actors;
-		this.filmId = filmId;
+		this.filmID = filmID;
 		this.title = title;
 		this.description = description;
 		this.releaseYear = releaseYear;
@@ -67,12 +67,12 @@ public class Film {
 		this.actors = actors;
 	}
 
-	public int getfilmId() {
-		return filmId;
+	public int getfilmID() {
+		return filmID;
 	}
 
-	public void setfilmId(int id) {
-		this.filmId = id;
+	public void setfilmID(int id) {
+		this.filmID = id;
 	}
 
 	public String getTitle() {
@@ -165,10 +165,16 @@ public class Film {
 
 	@Override
 	public String toString() {
-		return "Film [actors=" + actors + ", id=" + filmId + ", title=" + title + ", description=" + description
+		return "Film [actors=" + actors + ", id=" + filmID + ", title=" + title + ", description=" + description
 				+ ", releaseYear=" + releaseYear + ", languageId=" + languageId + ", rentalDuration=" + rentalDuration
 				+ ", rentalRate=" + rentalRate + ", length=" + length + ", replacementCost=" + replacementCost
 				+ ", rating=" + rating + ", language=" + language + ", specialFeatures=" + specialFeatures + "]";
+	}
+	
+	public String toStringFilmBySearch() {
+		return "\nID: " + filmID + "\nTitle: " + title + "\nRelease Year: " + releaseYear 
+				+ "\nRating: " + rating + "\nDescription: " + description + "\nLanguage: " + language
+				+ "\n" + actors;
 	}
 
 	@Override
@@ -177,7 +183,7 @@ public class Film {
 		int result = 1;
 		result = prime * result + ((actors == null) ? 0 : actors.hashCode());
 		result = prime * result + ((description == null) ? 0 : description.hashCode());
-		result = prime * result + filmId;
+		result = prime * result + filmID;
 		result = prime * result + ((language == null) ? 0 : language.hashCode());
 		result = prime * result + languageId;
 		result = prime * result + length;
@@ -211,7 +217,7 @@ public class Film {
 				return false;
 		} else if (!description.equals(other.description))
 			return false;
-		if (filmId != other.filmId)
+		if (filmID != other.filmID)
 			return false;
 		if (language == null) {
 			if (other.language != null)
