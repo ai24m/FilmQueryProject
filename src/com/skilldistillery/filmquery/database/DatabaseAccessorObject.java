@@ -9,7 +9,7 @@ import com.skilldistillery.filmquery.entities.Film;
 public class DatabaseAccessorObject implements DatabaseAccessor {
 	private static final String URL = "jdbc:mysql://localhost:3306/sdvid?useSSL=false";
 	private static final String user = "student";
-	private static final String pass = "root";
+	private static final String pass = "root"; //or "student"
 	
 	static {
 		try {
