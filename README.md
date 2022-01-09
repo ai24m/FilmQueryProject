@@ -1,8 +1,7 @@
 # FilmQuery Project
 
 
-https://user-images.githubusercontent.com/89150394/148664910-76d15f4a-e429-4ce0-b7a7-740960af367c.mov {:height="50%" width="50%"}
-
+https://user-images.githubusercontent.com/89150394/148664910-76d15f4a-e429-4ce0-b7a7-740960af367c.mov
 
 ## Description
 The FilmQuery Project was a command-line application that utilized ORM (Object-Related Mapping) with JDBC (Java Database Connectivity). The idea was to prompt a user with a menu that asked whether they would like to:
